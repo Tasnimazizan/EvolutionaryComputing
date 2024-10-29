@@ -6,7 +6,7 @@ st.header("Genetic Algorithm")
 POP_SIZE = 500
 
 #TARGET: Our goal.
-TARGET = st.text_input("Enter Your Name")
+TARGET = st.text_input("Enter Your Name","tasnim")
 
 #MUT_RATE: Rate at which our string will be changed.
 #MUT_RATE = 0.2
