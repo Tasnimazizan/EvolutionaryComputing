@@ -5,12 +5,12 @@ st.header("Genetic Algorithm")
 #POP_SIZE: Number of Chromosomes in our list.
 POP_SIZE = 500
 
+#TARGET: Our goal.
+TARGET = st.text_input("Enter Your Name")
+
 #MUT_RATE: Rate at which our string will be changed.
 #MUT_RATE = 0.2
 MUT_RATE = st.number_input("Enter Your Mutation Rate")
-
-#TARGET: Our goal.
-TARGET = st.text_input("Enter Your Name")
 
 #GENES: Options from which our population would be created.
 GENES = ' abcdefghijklmnopqrstuvwxyz'
