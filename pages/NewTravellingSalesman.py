@@ -7,8 +7,10 @@ import statistics
 import pandas as pd
 import seaborn as sns
 import streamlit as st
-st.header("Travelling Salesman 2")
+st.header("Travelling Salesman")
 
+x = st.number_input("Insert a number", step=1, format="%d")
+y = st.number_input("Insert a number", step=1, format="%d")
 x = [0,3,6,7,15,10,16,5,8,1.5]
 y = [1,2,1,4.5,-1,2.5,11,6,9,12]
 cities_names = ["Gliwice", "Cairo", "Rome", "Krakow", "Paris", "Alexandria", "Berlin", "Tokyo", "Rio", "Budapest"]
