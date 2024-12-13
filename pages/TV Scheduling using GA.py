@@ -22,7 +22,7 @@ def read_csv_to_dict(file_path):
 file_path = '/data/program_ratings.csv'
     
 # Get the data in the required format
-# program_ratings_dict = read_csv_to_dict(file_path)
+program_ratings_dict = read_csv_to_dict(file_path)
 
 # Print the result (you can also return or process it further)
 for program, ratings in program_ratings_dict.items():
