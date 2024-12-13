@@ -21,6 +21,9 @@ def read_csv_to_dict(file_path):
 # Path to the CSV file
 file_path = '/data/program_ratings.csv'
 
+if not os.path.exists(file_path):
+    raise FileNotFoundError(f"The file {file_path} does not exist. Please check the file path.")
+    
 # Get the data in the required format
 program_ratings_dict = read_csv_to_dict(file_path)
 
