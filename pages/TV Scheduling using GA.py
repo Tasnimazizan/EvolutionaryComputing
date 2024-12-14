@@ -1,5 +1,7 @@
 import csv
 import streamlit as st
+import pandas as pd
+
 st.header("TV Scheduling using Genetic Algorithm")
 
 # Function to read the CSV file and convert it to the desired format
@@ -24,9 +26,11 @@ file_path = 'data/program_ratings.csv'
 # Get the data in the required format
 program_ratings_dict = read_csv_to_dict(file_path)
 
-ratings = program_ratings_dict
-all_programs = list(ratings.keys()) # all programs
-all_time_slots = list(range(6, 24)) # time slots
+# Display the table in Streamlit
+st.title("Program Ratings Table")
+st.write("Below is the table displaying program ratings:")
+
+st.dataframe(data)
     
 # Genetic Algorithm Parameters
 st.sidebar.header("Genetic Algorithm Parameters")
