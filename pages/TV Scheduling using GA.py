@@ -24,9 +24,10 @@ file_path = 'data/program_ratings.csv'
 # Get the data in the required format
 program_ratings_dict = read_csv_to_dict(file_path)
 
-all_programs = list(ratings.keys()) # all programs
-all_time_slots = list(range(6, 24)) # time slots
-
+# Print the result (you can also return or process it further)
+for program, ratings in program_ratings_dict.items():
+    st.write(f"'{program}': {ratings},")
+    
 # Genetic Algorithm Parameters
 st.sidebar.header("Genetic Algorithm Parameters")
 CO_R = st.sidebar.slider("Crossover Rate (CO_R)", min_value=0.0, max_value=0.95, value=0.8, step=0.01)
