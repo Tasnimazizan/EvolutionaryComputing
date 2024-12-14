@@ -92,6 +92,8 @@ def genetic_algorithm(initial_schedule, generations=100, population_size=50, cro
 
     for generation in range(generations):
         new_population = []
+
+        # Elitism
         population.sort(key=lambda schedule: fitness_function(schedule), reverse=True)
         new_population.extend(population[:elitism_size])
 
