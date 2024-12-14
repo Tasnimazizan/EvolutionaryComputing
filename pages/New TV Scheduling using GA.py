@@ -28,6 +28,7 @@ file_path = 'data/program_ratings.csv'
 program_ratings_dict = read_csv_to_dict(file_path)
 
 # Genetic Algorithm Parameters
+st.sidebar.header("Genetic Algorithm Parameters")
 CO_R = st.sidebar.slider("Crossover Rate (CO_R)", min_value=0.0, max_value=0.95, value=0.8, step=0.01)
 MUT_R = st.sidebar.slider("Mutation Rate (MUT_R)", min_value=0.01, max_value=0.05, value=0.02, step=0.01)
 
