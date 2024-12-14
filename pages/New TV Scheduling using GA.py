@@ -123,6 +123,7 @@ genetic_schedule = genetic_algorithm(initial_best_schedule)
 final_schedule = initial_best_schedule + genetic_schedule[:rem_t_slots]
 
 # Display Results in Table Format
+st.write("\nFinal Optimal Schedule:")
 schedule_data = {
     "Time Slot": [f"{hour}:00" for hour in all_time_slots],
     "Program": final_schedule,
