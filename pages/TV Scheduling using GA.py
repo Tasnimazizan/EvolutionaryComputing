@@ -27,6 +27,9 @@ file_path = 'data/program_ratings.csv'
 program_ratings_dict = read_csv_to_dict(file_path)
 
 # Display the table in Streamlit
+# Print the result (you can also return or process it further)
+for program, ratings in program_ratings_dict.items():
+    print(f"'{program}': {ratings},")
 st.title("Program Ratings Table")
 st.write("Below is the table displaying program ratings:")
 
